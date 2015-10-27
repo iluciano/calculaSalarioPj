@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+        <title>Conferir Salário</title>
+
+        <script src="js/shared/angular.min.js"></script>
+
+    </head>
+    <body ng-controller="MainController">
+        <header>
+            <div class="container">
+                <div>
+                    <h1>Conferir Salário</h1>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label for="txtValorHora">Valor Hora.:</label>
+                    <input type="number" ng-model="valorHora" class="form-control" id="txtValorHora" placeholder="Ex.25.00">
+                  </div>
+                  <div class="form-group">
+                    <label for="txtHorasTrabalhadas">Horas Trabalhadas.:</label>
+                    <input type="number" ng-model="valorHorasTrabalhadas" class="form-control" id="txtHorasTrabalhadas" placeholder="Ex.180">
+                  </div>
+                  <div class="form-group">
+                    <label for="txtDescontoNF">Desconto NF.:</label>
+                    <input type="number" ng-model="valorDescontoNF" class="form-control" id="txtDescontoNF" placeholder="Ex.44.15">
+                  </div>
+                  <div class="form-group">
+                    <label for="txtCompras">Compras.:</label>
+                    <input type="number" ng-model="valorCompras" class="form-control" id="txtCompras" placeholder="Ex.244.55">
+                  </div>
+                  <button type="submit" ng-click="calcular()" class="btn btn-success btn-lg">Calcular</button>      
+                </form>           
+            </div>          
+        </section>
+        <footer>
+            <div class="container">
+                <div class="div-resultado">
+                    <p class="p-resultado">R{{resultado | currency}}</p>
+                </div>
+                <p class="p-assinatura"><span style="color:#00CCCB;">D<sup>3</sup></span>iL - <span style="color:#00CCCB;">D</span>eveloper, <span style="color:#00CCCB;">D</span>esigner, <span style="color:#00CCCB;">D</span>reamer</p>                 
+            </div>
+        </footer>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <!-- Modules -->
+        <script src="js/app.js"></script>
+
+        <!-- Controllers -->
+        <script src="js/controllers/MainController.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,19 @@
+.div-index h1{
+    color: #89949C;
+}
+.div-index img{
+    width: 90%;
+}
+.div-resultado{
+    margin-top:20%;
+}
+.p-resultado{
+    font-size: 4em;
+    color: #FFFFFF;
+    background-color: #5F9EA0;
+    padding: 10px;
+}
+.p-assinatura{
+    margin-bottom: 0;
+    color: #89949C;
+}
