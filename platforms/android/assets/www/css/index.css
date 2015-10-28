@@ -14,24 +14,31 @@ header h2{
 }
 @media screen and (min-width: 768px){
     .div-index img{
-        max-width: 500px;
-        max-height: 343px;
+        max-width: 350px;
+        max-height: 241px;
         width: auto;
         height: auto;
     }
+footer h2{
+    padding-top: 10px !important;
+}    
 }
 footer h2{
     color: #89949C;
-    padding-top: 30px;
+    padding-top: 20px;
+}
+.form-group label{
+    color: #4e4e4e;
 }
 .div-resultado{
-    margin-top:10%;
+    margin-top:5%;
 }
 .p-resultado{
     font-size: 4em;
-    color: #FFFFFF;
-    background-color: #5F9EA0;
+    color: #4e4e4e;
+    background-color: #d9d9d9;
     padding: 10px;
+    border-radius: 5px;
 }
 .p-assinatura{
     margin-bottom: 0;

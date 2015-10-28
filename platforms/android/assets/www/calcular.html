@@ -51,15 +51,15 @@
                     <label for="txtCompras">Compras.:</label>
                     <input type="number" ng-model="valorCompras" class="form-control" id="txtCompras" placeholder="Ex.244.55">
                   </div>
-                  <button type="submit" ng-click="calcular()" class="btn btn-success btn-lg">Calcular</button>      
-                </form>           
+                  <button type="submit" ng-click="calcular()" class="btn btn-primary btn-lg">Calcular</button>      
+                </form>
+                <div class="div-resultado">
+                    <p class="p-resultado">R{{resultado | currency}}</p>
+                </div>                 
             </div>          
         </section>
         <footer>
-            <div class="container">
-                <div class="div-resultado">
-                    <p class="p-resultado">R{{resultado | currency}}</p>
-                </div>
+            <div class="container text-center">
                 <p class="p-assinatura"><span style="color:#00CCCB;">D<sup>3</sup></span>iL - <span style="color:#00CCCB;">D</span>eveloper, <span style="color:#00CCCB;">D</span>esigner, <span style="color:#00CCCB;">D</span>reamer</p>                 
             </div>
         </footer>
