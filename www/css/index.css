@@ -1,10 +1,8 @@
-.div-index h1{
+header h2{
     color: #89949C;
-    margin: 20px auto;
-    width: 95%;
 }
 .div-index img{
-    padding-top: 30px;
+    padding-top: 10px;
 }
 @media screen and (max-width: 480px){
     .div-index img{
@@ -16,18 +14,21 @@
 }
 @media screen and (min-width: 768px){
     .div-index img{
-        max-width: 700px;
-        max-height: 481px;
+        max-width: 350px;
+        max-height: 241px;
         width: auto;
         height: auto;
     }
+footer h2{
+    padding-top: 10px !important;
+}    
 }
-.div-index h2{
+footer h2{
     color: #89949C;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .div-resultado{
-    margin-top:20%;
+    margin-top:5%;
 }
 .p-resultado{
     font-size: 4em;
