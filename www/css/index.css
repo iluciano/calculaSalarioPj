@@ -27,14 +27,18 @@ footer h2{
     color: #89949C;
     padding-top: 20px;
 }
+.form-group label{
+    color: #4e4e4e;
+}
 .div-resultado{
     margin-top:5%;
 }
 .p-resultado{
     font-size: 4em;
-    color: #FFFFFF;
-    background-color: #5F9EA0;
+    color: #4e4e4e;
+    background-color: #d9d9d9;
     padding: 10px;
+    border-radius: 5px;
 }
 .p-assinatura{
     margin-bottom: 0;
